@@ -14,7 +14,7 @@ namespace AzureBlobTest
             string containerName = "imagesapi";
             string localFilePath = "C:\\Tipos de Filas_RabbitMQ.png";
 
-            //Upload from diretório
+            //Upload from directory
             string bloboname = await UploadBlob(connectionString, containerName, localFilePath);
 
 
