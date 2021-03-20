@@ -10,9 +10,9 @@ namespace AzureBlobTest
         static async Task Main(string[] args)
         {
 
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=eventthumb20201219174901;AccountKey=Z1yN9gjZltd0E0f9u+FVCIUU2890L3VS2SpsYaK/9n46anFTAHXBtH+dwuIS0o058BhbX/UhJZ/AjpDaKgKFzg==;EndpointSuffix=core.windows.net";
+            string connectionString = "DefaultEndpointsProtocol=https;AccountName=event;AccountKey=Z1yN9gjZltd0E0f9u+FVCIVV2890L3VS2SpsYaK/9n46anFTAHXBtH+dwuIS0o058BhbX/UhJZ/AjpDaKgKFzg==;EndpointSuffix=core.windows.net";
             string containerName = "imagesapi";
-            string localFilePath = "C:\\Users\\Denis\\Desktop\\Tipos de Filas_RabbitMQ.png";
+            string localFilePath = "C:\\Tipos de Filas_RabbitMQ.png";
 
             //Upload from diretório
             string bloboname = await UploadBlob(connectionString, containerName, localFilePath);
