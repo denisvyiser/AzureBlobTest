@@ -100,7 +100,7 @@ namespace AzureBlobTest
 
             using (MemoryStream m = new MemoryStream())
                 {
-                uploadFileStream.CopyToAsync(m);
+                await uploadFileStream.CopyToAsync(m);
 
                     // Convert byte[] to Base64 String
                     string base64String = Convert.ToBase64String(m.ToArray());
